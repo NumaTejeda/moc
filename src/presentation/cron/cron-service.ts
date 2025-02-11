@@ -7,7 +7,6 @@ type OnTick = ()=>void;
 
 export class CronService {
 
-
     public static creatJob( cronTime: CronTime, onTick: OnTick): CronJob{
         /* examples https://github.com/kelektiv/node-cron */
 
@@ -15,6 +14,5 @@ export class CronService {
 
         job.start();
         return job;
-
     }
 }
